@@ -15,7 +15,7 @@ print(number)
 easy_attempt = 10
 hard_attempt = 5
 
-# Define a function to set difficulty level
+# Define a function for easy difficulty level
 def easy_level(easy_attempt):
       print(f"You have {easy_attempt} attempts to guess the correct number between 1 & 100")
       number_attempts = 0
@@ -36,7 +36,7 @@ def easy_level(easy_attempt):
                print("You guessed right!")
 
             
-
+#Define a function for hard difficulty level
 def hard_level(hard_attempt):
    print(f"You have {hard_attempt} attempts to guess the correct number between 1 & 100")
    number_attempts = 0
