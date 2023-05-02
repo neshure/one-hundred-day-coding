@@ -1,6 +1,7 @@
 from art import higher_or_lower, VS
 from game_data import data
 import random
+import os
 
 
 #Print higher or lower ASCII logo
@@ -22,6 +23,7 @@ print(f"Compare A: {random_choice_A['name']}, a {random_choice_A['description']}
 #print Vs. ASCII logo
 print(VS)
 print(f"Against B: {random_choice_B['name']}, a {random_choice_B['description']}, from {random_choice_B['country']}. ")
+# Ask user who has more follower
 guess_data = input("Who has more followers? Type 'A' or 'B': ").lower()
 
 
@@ -42,6 +44,8 @@ is_game_over = False
 
 game_score = 0
 
+os.system('clear')
+print(higher_or_lower)
 while not is_game_over:
   correct_answer = compare_A_and_B()
   if correct_answer == 0:
